@@ -1,0 +1,282 @@
+#contain .left {
+    position: -webkit-sticky;
+    position: sticky;
+    float: left;
+    width: 25%;
+    top: 20%;
+}
+
+#contain .left .Frosting {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    z-index: 2;
+}
+
+#contain .left .catalogue-title {
+    position: absolute;
+    top: 25px;
+    left: 30%;
+    width: 40%;
+    color: #202020;
+    font-size: large;
+    font-weight: 800;
+    z-index: 3;
+}
+
+#contain .left .catalogue {
+    position: absolute;
+    padding-left: 14px;
+    overflow: hidden;
+    top: 60px;
+    left: 10%;
+    width: 50%;
+    z-index: 3;
+}
+
+#contain .left .catalogue li {
+    color: #404040;
+    margin: 5% 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    list-style: square inside url("https://2021.igem.org/wiki/images/9/9b/T--CPU_CHINA--circle.svg");
+}
+
+#contain .left .catalogue li:hover {
+    list-style: square inside url("https://2021.igem.org/wiki/images/5/5b/T--CPU_CHINA--circle2.svg");
+}
+
+#contain .left .catalogue .current {
+    color: #0071ff;
+    list-style: square inside url("https://2021.igem.org/wiki/images/5/5b/T--CPU_CHINA--circle2.svg");
+}
+
+#contain .left .catalogue li:hover a {
+    color: #0071ff;
+    text-decoration: none;
+}
+
+#contain .left .catalogue li:hover .circle {
+    fill: #0071ff;
+}
+
+#contain .left .drug1 {
+    position: absolute;
+    width: 120%;
+    top: 200px;
+    left: -14%;
+    z-index: 1;
+}
+
+#contain .left .drug2 {
+    width: 120%;
+    position: absolute;
+    top: 200px;
+    right: -34%;
+    z-index: 3;
+}
+
+#contain #detail {
+    float: right;
+    position: relative;
+    width: 60%;
+    margin-right: 8%;
+    padding: 5%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: "CABIN-REGULAR";
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0) inset;
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0) inset;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0) inset;
+    -o-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0) inset;
+}
+
+#contain #detail h1 {
+    padding: 10% 0;
+    font-family: "MONTSERRAT-BLACKITALIC2";
+    font-size: 5vw;
+    color: #212121;
+    text-align: center;
+    line-height: normal;
+}
+
+#contain #detail h2 {
+    margin: 5% 0;
+    font-size: 4vw;
+    font-family: "MONTSERRAT-BLACKITALIC2";
+    color: #424242;
+    text-align: center;
+    line-height: normal;
+}
+
+#contain #detail p {
+    margin: 2% 0;
+    color: #212121;
+    line-height: 1.5em;
+}
+
+#contain #detail img {
+    width: 100%;
+    margin: 5% 0;
+}
+/* 下载按钮 */
+#contain #detail #downLoad {
+    margin: 2vw 0;
+    width: 100%;
+    height: 3vw;
+    line-height: 3vw;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #D9D9D9 , #FFFFFF);
+}
+
+#contain #detail #downLoad span{
+    margin-left: 1vw;
+}
+
+#contain #detail #downLoad a{
+    float: right;
+    width: 20%;
+    height: 3vw;
+    line-height: 3vw;
+    border: none;
+    text-align: center;
+    background-color: #0071ff;
+    color: #FAFAFA;
+    font-size: 1.3vw;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.current {
+    color: #0071ff;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+#contain #detail table {
+    width: 100%;
+    border-radius: 12px;
+    overflow-x: auto;
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0) inset;
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0) inset;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0) inset;
+    -o-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0) inset;
+}
+
+#contain #detail table tr {
+    text-align: center;
+}
+
+#contain #detail table thead tr,
+#contain #detail table tbody tr {
+    height: 50px;
+    line-height: 50px;
+    /*background-color: pink;*/
+}
+
+#contain #detail table tr td {
+    /*设置table表格每列底部边框*/
+    font-size: medium;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/*table tr:last-child td:first-child,
+table tr:last-child td:nth-child(2),
+table tr:last-child td:nth-child(3),
+table tr:last-child td:last-child{/!*设置table表格最后一列底部边框*!/
+    border-bottom: 2px solid #000;
+}*/
+#contain #detail table tr th {
+    background: #0071fe;
+    font-family: "MONTSERRAT-BLACK1";
+    font-size: larger;
+    color: #FAFAFA;
+}
+
+#contain #detail table tr:first-child th:first-child {
+    border-top-left-radius: 12px;
+}
+
+#contain #detail table tr:first-child th:last-child {
+    border-top-right-radius: 12px;
+}
+
+#contain #detail table tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+#contain #detail table tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+#contain #detail #rotationChart{
+    margin: 2vw;
+}
+
+#contain #detail #rotationChart img{
+    margin: 0;
+    width: 100%;
+    height: 50vmin;
+    border-radius: 20px;
+}
+
+#contain #detail #rotationChart #text{
+    margin: 1vmin 0;
+    position: relative;
+    height: 6vmin;
+    line-height: 6vmin;
+    text-align: center;
+    font-family: "BLACKITALIC";
+}
+
+#contain #detail #rotationChart button{
+    background-color: #0071fe;
+    width: 6vmin;
+    height: 6vmin;
+    border:none;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #FAFAFA;
+    
+}
+
+#contain #detail #rotationChart button:nth-child(1){
+    position: absolute;
+    left: 0;
+}
+
+#contain #detail #rotationChart button:nth-child(2){
+    position: absolute;
+    right: 0;
+}
+
+#contain #detail #rotationChart #briefText{
+    width: 100%;
+    padding: 3vmin;
+    background-color: #EFEFEF;   
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 730px) {
+    #contain .left {
+        display: none;
+    }
+
+    #contain #detail {
+        width: 100%;
+        float: none;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+}

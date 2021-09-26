@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://2017.igem.org/wiki/index.php?title= Template:SCU_China/default_CSS &action=raw&ctype=text/css">
+    <link rel="stylesheet"
+        href="https://2021.igem.org/wiki/index.php?title= Template:CPU_CHINA/reset_CSS &action=raw&ctype=text/css">
+    <link rel="stylesheet"
+        href="https://2021.igem.org/wiki/index.php?title= Template:CPU_CHINA/common_CSS &action=raw&ctype=text/css">
+
+        <style>
+            #header #title {
+                left: 23%;
+            }
+    
+            #contain .label {
+                margin: 0;
+            }
+    
+            #contain .label .line {
+                display: block;
+                text-align: center;
+                white-space: nowrap;
+                overflow-x: scroll;
+            }
+    
+            /* 滚动条宽度 */
+            #contain .label .line::-webkit-scrollbar {
+                height: 3px;
+            }
+    
+            /* 滚动条轨道 */
+            #contain .label .line::-webkit-scrollbar-track {
+                background: #FAFAFA;
+                border-radius: 10px;
+            }
+    
+            /* 小滑块 */
+            #contain .label .line::-webkit-scrollbar-thumb {
+                background: #c5daee49;
+                border-radius: 10px;
+                width: 5px;
+            }
+    
+            #contain .label .line::-webkit-scrollbar-thumb:hover {
+                background: #41a0ff;
+            }
+    
+            /* 选择圈 */
+            #contain .label li {
+                margin: 0 2px;
+                display: inline-block;
+                width: 12vmin;
+                height: 12vmin;
+                border: 3px solid #C6C6C6;
+                border-radius: 50%;
+                line-height: 12vmin;
+                font-family: "MONTSERRAT-BLACKITALIC2";
+                font-size: 1.2em;
+                font-weight: bolder;
+                -webkit-text-fill-color: #FAFAFA;
+                -webkit-text-stroke: 0.6px #5f5f5f;
+            }
+    
+            #contain .label .addClass {
+                background-color: #0072FE;
+                -webkit-text-stroke: 0.3px #FAFAFA;
+            }
+    
+            #contain .card {
+                position: relative;
+                display: block;
+                margin: 1% 0;
+            }
+    
+            #contain .card .presentation {
+                position: absolute;
+                padding: 2%;
+                left: 17%;
+                background-color: #fcfdffd9;
+                border: 2.5px solid #EDEDED;
+                border-radius: 50px;
+                width: 65%;
+                z-index: 2;
+            }
+    
+            /* 头像 */
+            #contain .card .presentation .head-portrait {
+                float: left;
+                margin: 2%;
+                width: 45vmin;
+                height: 45vmin;
+                border: 2px solid #D9D9D9;
+                border-radius: 50%;
+                background-color: #FFFFFF;
+            }
+    
+            #contain .card .presentation .head-portrait img {
+                width: 45vmin;
+                height: 45vmin;
+                border-radius: 50%;
+            }
+    
+            /* 文字介绍 */
+            #contain .card .presentation .describe {
+                float: left;
+                width: 55%;
+            }
+    
+            /* 名字 */
+            #contain .card .presentation #name {
+                margin: 3% 0;
+                line-height: normal;
+                font-family: "MONTSERRAT-BLACKITALIC2";
+                font-size: 3em;
+                font-weight: bolder;
+                color: #212121;
+                overflow: visible;
+            }
+    
+            /* 职位 */
+            #contain .card .presentation #post {
+                padding: 0;
+                line-height: normal;
+                font-family: CABIN-ITALIC;
+                font-size: 2em;
+                color: #0072FE;
+                overflow: visible;
+            }
+    
+            /* 专业 */
+            #contain .card .presentation #major {
+                padding: 0;
+                line-height: normal;
+                font-family: CABIN-ITALIC;
+                font-size: 2em;
+                color: #424242;
+                overflow: visible;
+            }
+    
+            /* 宣言 */
+            #contain .card .presentation #declaration {
+                margin-top: 15%;
+                line-height: 1.2em;
+                font-size: 1.2em;
+                font-family: "CABIN-REGULAR";
+            }
+    
+            #contain .card .drug1 {
+                position: absolute;
+                top: 1.2in;
+                width: 54%;
+                z-index: 3;
+            }
+    
+            #contain .card .drug2 {
+                position: absolute;
+                left: 45%;
+                top: 1.2in;
+                width: 54%;
+                z-index: 1;
+            }
+    
+            #contain #instructor {
+                margin-top: 40%;
+                margin-left: 8%;
+            }
+    
+            #contain .card2 {
+                float: left;
+                margin: 2%;
+                padding: 1%;
+                width: 300px;
+                height: 170px;
+                background-color: #F6F6F6;
+                border-radius: 20px;
+            }
+    
+            #contain .card2 .head-portrait2 {
+                float: left;
+                margin-right: 10px;
+                width: 100px;
+                height: 100px;
+            }
+    
+            #contain .card2 .head-portrait2 img {
+                width: 100px;
+                height: 100px;
+                border: 2px solid #D9D9D9;
+                border-radius: 50%;
+            }
+    
+            #contain .card2 .describe2 {
+                float: left;
+                width: 160px;
+            }
+    
+            /* 名字 */
+            #contain .card2 #name2 {
+                margin: 3% 0;
+                font-family: "MONTSERRAT-BLACKITALIC2";
+                font-size: 1.2em;
+                font-weight: bolder;
+                color: #212121;
+                overflow: visible;
+            }
+    
+            /* 职位 */
+            #contain .card2 #post2 {
+                padding: 0;
+                font-family: CABIN-ITALIC;
+                font-size: 1em;
+                color: #0072FE;
+                overflow: visible;
+            }
+    
+            /* 专业 */
+            #contain .card2 #major2 {
+                padding: 0;
+                font-family: CABIN-ITALIC;
+                font-size: 1em;
+                color: #424242;
+                overflow: visible;
+            }
+    
+            /* 宣言 */
+            #contain .card2 #declaration2 {
+                margin-top: 5%;
+                font-size: 0.8em;
+                line-height: 1em;
+                text-align: left;
+                font-family: "CABIN-REGULAR";
+            }
+    
+            #contain #attributions {
+                margin-top: 5%;
+                text-align: center;
+            }
+    
+            #contain #attributions button {
+                width: 45vmin;
+                height: 13vmin;
+                background-color: #0072FE;
+                border: none;
+                border-radius: 50px;
+                font-size: 2em;
+                color: #FAFAFA;
+                font-family: "MONTSERRAT-BLACK1", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+                -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                -o-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            }
+    
+            @media screen and (max-width:1024px) {
+                #header #title {
+                    top: 10%;
+                    font-size: 800%;
+                }
+                #contain #instructor {
+                    margin-top: 90%;
+                }
+    
+                #contain .card .presentation .describe{
+                    width: 100%;
+                }
+    
+                #contain .card .presentation #name {
+                    text-align: center;
+                }
+    
+                #contain .card .presentation #post {
+                    text-align: center;
+                }
+    
+                #contain .card .presentation #major {
+                    text-align: center;
+                }
+                #contain .card .presentation #declaration{
+                    text-align: center;
+                }
+            }
+    
+            @media screen and (max-width:930px) {
+                #header #title {
+                    top: 9%;
+                    font-size: 700%;
+                }
+    
+            }
+    
+            @media screen and (max-width:830px) {
+                #header #title {
+                    top: 8%;
+                    font-size: 600%;
+                }
+    
+            }
+    
+            @media screen and (max-width:730px) {
+                #header #title {
+                    top: 5%;
+                    font-size: 500%;
+                }
+            }
+    
+            @media screen and (max-width:630px) {
+                #header #title {
+                    top: 4%;
+                    font-size: 400%;
+                }
+    
+                #contain #instructor {
+                    margin-top: 130%;
+                }
+            }
+    
+            @media screen and (max-width:550px) {
+                #contain .label li {
+                    font-size: 1.2em;
+                }
+            }
+    
+            @media screen and (max-width:530px) {
+                #header #title {
+                    top: 3%;
+                    font-size: 350%;
+                }
+    
+            }
+    
+            @media screen and (max-width:450px) {
+                #header #title {
+                    font-size: 300%;
+                }
+    
+                #contain .label li {
+                    width: 13vmin;
+                    height: 13vmin;
+                    font-size: 1em;
+                }
+    
+                #contain .card .presentation {
+                    width: 80%;
+                    left: 8%;
+                    padding-bottom: 5%;
+                    border-radius: 30Px;
+                }
+    
+                #contain .card .presentation .head-portrait {
+                    margin: 5% 18%;
+                }
+    
+                #contain .card .presentation #name {
+                    font-size: 2em;
+                }
+    
+                #contain .card .presentation #post {
+                    font-size: 1.5em;
+                }
+    
+                #contain .card .presentation #major {
+                    font-size: 1.5em;
+                }
+    
+                #contain .card .presentation #declaration {
+                    font-size: 1em;
+                    line-height: 1em;
+                }
+    
+                #contain #attributions button {
+                    font-size: 1em;
+                }
+            }
+    
+            @media screen and (max-width:400px) {
+                #header #title {
+                    font-size: 250%;
+                }
+            }
+    
+            @media screen and (max-width:350px) {
+                #header #title {
+                    font-size: 200%;
+                }
+    
+                #contain .label li {
+                    width: 14vmin;
+                    height: 14vmin;
+                    font-size: smaller;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="menu">
+            <div id="menuBack" v-show="isOpen" :class="isActive" @click="ifclick"></div>
+            <a href=""><img id="logo" src="https://2021.igem.org/wiki/images/d/d5/T--CPU_CHINA--ProjectLogo.png" alt="项目logo"></a>
+            <div id="select" @mouseleave="leave" @mouseover="on">
+                <img id="menuImg" :src="menu" alt="这是菜单图片" @mouseover="mouseover" @click="click">
+                <ul id="class-a" class="class" v-show="classA">
+                    <li v-for="(item,index) in classList" :class="isActiveA == index? 'class-a' : ''"
+                        @click="classAClick(index)">{{item}}</li>
+                </ul>
+                <ul id="class-b" class="class" v-show="classB">
+                    <li v-for="item in classList2[isActiveA]" :class="isActiveB == item.num? 'class-b' : ''"
+                        @mouseover="classBOver(item.num)" @mouseleave="classBLeave(item.num)"><a :href="item.url">
+                            {{item.text}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <img class="background" src="https://2021.igem.org/wiki/images/a/a5/T--CPU_CHINA--members--Top.png" alt="">
+        <h1 id="title">PORTRAIT</h1>
+        <svg width="100%" height="100%" viewBox="0 0 1920 600" version="1.1"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g transform="matrix(1.16285,0,0,1.38837,253.426,-231.748)">
+                <g id="AD1">
+                    <path id="凹形遮罩"
+                        d="M1433.18,439.801C1433.18,439.801 1001.08,524.071 607.621,524.374C219.99,524.673 -217.935,439.801 -217.935,439.801L-217.935,944.811L1433.18,944.811L1433.18,439.801Z"
+                        style="fill:#FAFAFA;" />
+                </g>
+            </g>
+        </svg>
+    </header>
+    <div id="contain" class=" clearfix">
+        <div id="members">
+            <ul class="label">
+                <span class="line">
+                    <li v-for="item in leader" @mouseover="overLable(item)"
+                        :class="isActive == item.num? 'addClass' : ''">{{item.lab}}
+                    </li>
+                </span>
+                <span class="line">
+                    <li v-for="item in ordMem" @mouseover="overLable(item)"
+                        :class="isActive == item.num? 'addClass' : ''">
+                        {{item.lab}}
+                    </li>
+                </span>
+            </ul>
+            <div class="card clearfix">
+                <div class="presentation">
+                    <span class="head-portrait"><img :src="head" alt=""></span>
+                    <div class="describe">
+                        <p id="name">{{name}}</p>
+                        <p id="post">{{post}}</p>
+                        <p id="major">{{major}}</p>
+                        <p id="declaration">{{declaration}}</p>
+                    </div>
+                </div>
+                <img class="drug1" src="https://2021.igem.org/wiki/images/8/84/T--CPU_CHINA--members--Drug1.png" alt="">
+                <img class="drug2" src="https://2021.igem.org/wiki/images/1/16/T--CPU_CHINA--members--Drug2.png" alt="">
+            </div>
+        </div>
+        <div id="instructor" class="clearfix">
+            <div v-for="item in members" class="card2">
+                <span class="head-portrait2"><img :src="item.head" alt=""></span>
+                <div class="describe2">
+                    <p id="name2">{{ item.name }}</p>
+                    <p id="post2">{{ item.post }}</p>
+                    <p id="major2">{{ item.major }}</p>
+                    <p id="declaration2">{{ item.declaration }}</p>
+                </div>
+            </div>
+        </div>
+        <div id="attributions">
+            <button href="#">ATTRIBUTIONS</button>
+        </div>
+    </div>
+    <script
+        src="https://2021.igem.org/wiki/index.php?title= Template:CPU_CHINA/VueJS &action=raw&amp;ctype=text/javascript">
+        </script>
+    <script>
+        var contain = new Vue({
+            el: "#contain",
+            data: {
+                head: "https://2021.igem.org/wiki/images/5/55/T--CPU_CHINA--Members--1.jpg",
+                name: "Meiling Lu",
+                post: "PRIMARY PI",
+                major: "",
+                declaration: "Life is too important to be taken seriously.",
+                isActive: 0,
+                hover: -1,
+                last: 0,
+                lab2: ["PI", "PI", "LDR", "LDR", "Lab", "Lab", "Lab", "Lab", "Lab", "Lab", "Model", "Model",
+                    "HP", "HP", "Art", "Wiki"
+                ],
+                lab: "Lu",
+                leader: [{
+                    lab: "PI",
+                    head: "https://2021.igem.org/wiki/images/5/55/T--CPU_CHINA--Members--1.jpg",
+                    name: "Meilin Lu",
+                    position: "PRIMARY PI",
+                    major: "",
+                    declaration: "Life is too important to be taken seriously.",
+                    num: 0
+                },
+                {
+                    lab: "Chen",
+                    head: "",
+                    name: "Meirong Chen",
+                    position: "SECONDARY PI",
+                    major: "",
+                    declaration: "",
+                    num: 1
+                },
+                {
+                    lab: "Huang",
+                    head: "",
+                    name: "Ziyang Huang",
+                    position: "TEAM LEADER",
+                    major: "PHARMACEUTICAL SCIENCE(TOP-NOTCH)",
+                    declaration: "My ordinary self in a spectacular team.",
+                    num: 2
+                },
+                {
+                    lab: "Zheng",
+                    head: "",
+                    name: "Linyu Zheng",
+                    position: "TEAM LEADER",
+                    major: "PHARMACEUTICAL SCIENCE(TOP-NOTCH)",
+                    declaration: "Love and Peace",
+                    num: 3
+                }
+                ],
+                ordMem: [{
+                    lab: "Chen",
+                    head: "",
+                    name: "Wentao Chen",
+                    position: "WET LAB",
+                    major: "PHARMACEUTICAL SCIENCE(TOP-NOTCH)",
+                    declaration: "The more you think you see, the easier it\'ll be to fool you.",
+                    num: 4
+                },
+                {
+                    lab: "Liu",
+                    head: "",
+                    name: "Gongyu Liu",
+                    position: "WET LAB",
+                    major: "BIO-PHARMACEUTICAL",
+                    declaration: "Let life be beautiful like summer flowers and death like autume leaves.",
+                    num: 5
+                },
+                {
+                    lab: "Luo",
+                    head: "",
+                    name: "Peng Luo",
+                    position: "WET LAB",
+                    major: "PHARMACEUTICAL SCIENCE(TOP-NOTCH)",
+                    declaration: "There is a crack in everything, that\'s how the light gets in.",
+                    num: 6
+                },
+                {
+                    lab: "Ma",
+                    head: "",
+                    name: "Ruyi Ma",
+                    position: "WET LAB",
+                    major: "PHARMACEUTICAL ANALYSIS",
+                    declaration: "We are so excited about the future.",
+                    num: 7
+                },
+                {
+                    lab: "Wang",
+                    head: "",
+                    name: "Qinyue Wang",
+                    position: "WET LAB",
+                    major: "PHARMACEUTICAL SCIENCE(TOP-NOTCH)",
+                    declaration: "All experiences are gifts for the future.",
+                    num: 8
+                },
+                {
+                    lab: "Yuan",
+                    head: "",
+                    name: "Zihan Yuan",
+                    position: "WET LAB",
+                    major: "PHARMACY(BASE OF LIFE SCIENCE)",
+                    declaration: "There is only one me in this world.",
+                    num: 9
+                },
+                {
+                    lab: "Qian",
+                    head: "",
+                    name: "Hongjie Qian",
+                    position: "MATHEMATICAL MODELING",
+                    major: "PHARMACY (BIOCHEMISTRY AND PHARMACOLOGY)",
+                    declaration: "I have been looking for the solution called future.",
+                    num: 10
+                },
+                {
+                    lab: "Shen",
+                    head: "",
+                    name: "Zekai Shen",
+                    position: "MATHEMATICAL MODELING",
+                    major: "PHARMACY CHEMISTRY",
+                    declaration: "Down by the riverside, laid burdens down, find freedom, traveling light.",
+                    num: 11
+                },
+                {
+                    lab: "Wang",
+                    head: "",
+                    name: "Duanduan Wang",
+                    position: "HUMAN PRACTICES",
+                    major: "MARINE PHARMACY",
+                    declaration: "Action is eloquence.",
+                    num: 12
+                },
+                {
+                    lab: "Yuan",
+                    head: "",
+                    name: "Ying Yuan",
+                    position: "HUMAN PRACTICE",
+                    major: "PHARMACEUTICAL SCIENCE(TOP-NOTCH)",
+                    declaration: "I will always be loyal to freedom, believing in science and love.",
+                    num: 13
+                },
+                {
+                    lab: "Guan",
+                    head: "",
+                    name: "Jianxiang Guan",
+                    position: "ART DESIGN",
+                    major: "PHARMACOLOGY",
+                    declaration: "We are raising a brand new revolution of art in iGEM.",
+                    num: 14
+                },
+                {
+                    lab: "Zhang",
+                    head: "",
+                    name: "Jia Zhang",
+                    position: "WIKI PRODUCTION",
+                    major: "INFORMATION SYSTEMS AND INFORMATION MANAGEMENT",
+                    declaration: "Use legs and have legs.",
+                    num: 15
+                },
+                ],
+                members: [{
+                    head: "https://2021.igem.org/wiki/images/3/31/T--CPU_CHINA--%E7%8E%8B%E4%B8%80%E5%8D%9A.png",
+                    name: "Yanfeng Liu",
+                    post: "INSTRUCTOR",
+                    major: "PHARMACY",
+                    declaration: "What I can not create, I do not understand.",
+                },
+                {
+                    head: "https://2021.igem.org/wiki/images/3/31/T--CPU_CHINA--%E7%8E%8B%E4%B8%80%E5%8D%9A.png",
+                    name: "Weixuan Lu",
+                    post: "INSTRUCTOR",
+                    major: "PHARMACOLOGY (TOP-NOTCH)",
+                    declaration: "Remember, no answer is an answer too.",
+                },
+                {
+                    head: "https://2021.igem.org/wiki/images/3/31/T--CPU_CHINA--%E7%8E%8B%E4%B8%80%E5%8D%9A.png",
+                    name: "Qian Li",
+                    post: "ADVISOR",
+                    major: "PHARMACEUTICAL  ADMINISTRATION",
+                    declaration: "Too rich to introduce.",
+                },
+                {
+                    head: "https://2021.igem.org/wiki/images/3/31/T--CPU_CHINA--%E7%8E%8B%E4%B8%80%E5%8D%9A.png",
+                    name: "Tong LYU",
+                    post: "ADVISOR",
+                    major: "PHARMACY(BASE OF LIFE SCIENCE)",
+                    declaration: "Take the road less traveled, and don't look back in anger.",
+                },
+                {
+                    head: "https://2021.igem.org/wiki/images/3/31/T--CPU_CHINA--%E7%8E%8B%E4%B8%80%E5%8D%9A.png",
+                    name: "Leyi Liang",
+                    post: "ADVISOR",
+                    major: "PHARMACEUTICAL  ADMINISTRATION",
+                    declaration: "All work and no play makes Jack a dull boy. ​​​",
+                },
+                {
+                    head: "https://2021.igem.org/wiki/images/3/31/T--CPU_CHINA--%E7%8E%8B%E4%B8%80%E5%8D%9A.png",
+                    name: "Xiaoying Li",
+                    post: "ADVISOR",
+                    major: "TRADITIONAL CHINESE PHARMACOLOGY",
+                    declaration: "Design is a bridge connecting the world and us.",
+                },
+                {
+                    head: "https://2021.igem.org/wiki/images/8/8a/T--CPU_CHINA--Members--HDX.jpg",
+                    name: "Huandi Xu",
+                    post: "ADVISOR",
+                    major: "UNIVERSITY OF COPENHAGEN",
+                    declaration: "Study!",
+                },
+                {
+                    head: "https://2021.igem.org/wiki/images/3/31/T--CPU_CHINA--%E7%8E%8B%E4%B8%80%E5%8D%9A.png",
+                    name: "Xin Liu",
+                    post: "ADVISOR",
+                    major: "COMPUTER SCIENCE",
+                    declaration: "What's past is prologue",
+                },
+                {
+                    head: "https://2021.igem.org/wiki/images/3/31/T--CPU_CHINA--%E7%8E%8B%E4%B8%80%E5%8D%9A.png",
+                    name: "hahhah",
+                    post: "ADVISOR",
+                    major: "",
+                    declaration: "",
+                },
+                ]
+
+            },
+            methods: {
+                overLable(item) {
+                    setTimeout(() => {
+                        if (this.last < 4) {
+                            this.leader[this.last].lab = this.lab; //还原标签
+                        } else {
+                            this.ordMem[this.last - 4].lab = this.lab; //还原标签
+                        }
+                        this.isActive = item.num; //标签样式改变
+                        this.lab = item.lab; //保留标签姓
+                        item.lab = this.lab2[item.num]; // 将标签文字设置为职位
+                        this.head = item.head; //头像
+                        this.name = item.name; //名字
+                        this.post = item.position; //职位
+                        this.major = item.major; //专业
+                        this.declaration = item.declaration; //宣言
+                        this.last = item.num; //记录标签的序号
+                    }, 200)
+                }
+            }
+        })
+    </script>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>

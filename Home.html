@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://2017.igem.org/wiki/index.php?title= Template:SCU_China/default_CSS &action=raw&ctype=text/css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<style>
+    #first {
+        padding: 0 16%;
+    }
+
+    #first #title {
+        position: relative;
+        padding-top: 15%;
+        text-align: center;
+    }
+
+    #first #title #home-title {
+        font-family: "MONTSERRAT-BLACKITALIC2";
+        line-height: normal;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 8vw;
+    }
+
+    #first #title #decoration {
+        position: absolute;
+        top: 48%;
+        left: 39%;
+        width: 20%;
+    }
+
+    #first #brief-introduction {
+        margin: 12% 0;
+        text-align: center;
+        font-family: "MONTSERRAT-BLACKITALIC2";
+        font-size: 1.5vw;
+        letter-spacing: 0.2em;
+        color: #777777;
+    }
+
+    #first .paragraph {
+        margin-bottom: 14%;
+    }
+
+    #first .paragraph #img1 {
+        float: left;
+        width: 30%;
+    }
+
+    #first .paragraph #img2 {
+        float: right;
+        width: 50%;
+    }
+
+    #first .paragraph #img3 {
+        float: left;
+        width: 30%;
+    }
+
+    #first p {
+        line-height: 3vw;
+        font-size: 2vw;
+        letter-spacing: 0.05em;
+        font-family: "MONTSERRAT-BLACK1";
+        color: #373737;
+    }
+
+    #first .paragraph #p1 {
+        padding: 5vw 0;
+        float: right;
+        text-align: right;
+        width: 70%;
+    }
+
+    #first .paragraph #p2 {
+        padding: 1.5vw 0;
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    #first .paragraph #p3 {
+        padding: 3vw 0;
+        float: right;
+        text-align: right;
+        width: 70%;
+    }
+
+    #first #transition {
+        text-align: center;
+    }
+
+    #first .paragraph :nth-child(2) {
+        float: left;
+    }
+
+    #second #layer {
+        position: relative;
+        width: 100%;
+    }
+
+    #second #layer .rubbish {
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+
+    #second #layer #rubbish1 {
+        top: 50vw;
+        z-index: 4;
+    }
+
+    #second #layer #rubbish2 {
+        top: 40vw;
+        z-index: 3;
+    }
+
+    #second #layer #rubbish3 {
+        z-index: 2;
+    }
+
+    #second #layer #rubbish4 {
+        top: 33vw;
+        z-index: 1;
+    }
+</style>
+
+<body>
+    <header id=header>
+        <div id="load" v-show="loading"><img src="img2/T--CPU_CHINA--loading.gif" alt=""></div>
+        <div id="menu">
+            <div id="menuBack" v-show="isOpen" :class="isActive" @click="ifclick"></div>
+            <a href=""><img id="logo" src="img2/T--CPU_CHINA--ProjectLogo.png" alt="项目logo"></a>
+            <div id="select" @mouseleave="leave" @mouseover="on">
+                <img id="menuImg" :src="menu" alt="这是菜单图片" @mouseover="mouseover" @click="click">
+                <ul id="class-a" class="class" v-show="classA">
+                    <li v-for="(item,index) in classList" :class="isActiveA == index? 'class-a' : ''"
+                        @click="classAClick(index)">{{item}}</li>
+                </ul>
+                <ul id="class-b" class="class" v-show="classB">
+                    <li v-for="item in classList2[isActiveA]" :class="isActiveB == item.num? 'class-b' : ''"
+                        @mouseover="classBOver(item.num)" @mouseleave="classBLeave(item.num)"><a :href="item.url">
+                            {{item.text}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="first">
+        <div id="title">
+            <h1 id="home-title">POLYETHYLENE DECRADIST</h1>
+            <img id="decoration" src="img2/Home/T--CPU_CHINA--Home--Pic3.gif" alt="">
+        </div>
+        <p id="brief-introduction">a prescription for the earth affected by plastic polution</p>
+        <div class="paragraph clearfix">
+            <img id="img1" src="img2/Home/T--CPU_CHINA--Home--Pic1.png" alt="">
+            <p id="p1">With the rapid development of e-commerce, the number of express delivery is increasing year by
+                year.</p>
+        </div>
+        <div class="paragraph clearfix">
+            <p id="p2">In 2020, China's express delivery volume will reach</p>
+            <img id="img2" src="img2/Home/T--CPU_CHINA--Home--Pic4.gif" alt="">
+        </div>
+        <div class="paragraph clearfix">
+            <img id="img3" src="img2/Home/T--CPU_CHINA--Home--Pic2.PNG" alt="">
+            <p id="p3">In order to ensure the integrity and safety of goods in express transportation, express
+                enterprises often need to package goods.</p>
+        </div>
+        <p id="transition">When the package arrives in the hands of consumers, packaging materials turn into packaging
+            waste.</p>
+    </div>
+    <div id="second">
+        <div id="layer">
+            <img class="rubbish" id="rubbish1" data-depth='2.00' data-type='parallax'
+                src="img2/Home/T--CPU_CHINA--Home--Rubbish1Fit.png" alt="">
+            <img class="rubbish" id="rubbish2" data-depth='1.2' data-type='parallax'
+                src="img2/Home/T--CPU_CHINA--Home--Rubbish2.PNG" alt="">
+            <img class="rubbish" id="rubbish3" data-depth='0.20' data-type=' parallax'
+                src="img2/Home/T--CPU_CHINA--Home--Rubbish3.GIF" alt="">
+            <img class="rubbish" id="rubbish4" data-depth='1.0' data-type='parallax'
+                src="img2/Home/T--CPU_CHINA--Home--Rubbish4.PNG" alt="">
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <!-- <footer>
+        <img id="sponsor" src="img2/sponsor.jpg" alt="">
+        <div id="connect">
+
+        </div>
+    </footer> -->
+    <script
+        src="https://2021.igem.org/wiki/index.php?title= Template:CPU_CHINA/VueJS &action=raw&amp;ctype=text/javascript">
+        </script>
+    <script
+        src="https://2021.igem.org/wiki/index.php?title= Template:CPU_CHINA/Jquery &action=raw&amp;ctype=text/javascript">
+        </script>
+    <script src="js/common.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
